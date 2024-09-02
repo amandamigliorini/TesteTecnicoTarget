@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Target Sistemas - Amanda C. S. Migliorini</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Desafio Target Sistemas - Estágio</h1>
+    </header>
+    <main>        
+        <div class="desafioDiv">
+            <h2>Desafio 01</h2>
+            <p class="desafioTitulo">1) Observe o trecho de código abaixo: int INDICE = 13, SOMA = 0, K = 0;
+                Enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; }
+                Imprimir(SOMA);
+                Ao final do processamento, qual será o valor da variável SOMA?
+            </p>
+            <h3>RESOLUÇÃO:</h3>
+            <p class="desafioResposta" id="resposta1"></p>
+        </div>
+
+        <div class="desafioDiv">
+            <h2>Desafio 02</h2>
+            <p class="desafioTitulo">2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma 
+                dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), 
+                escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência 
+                de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+            </p>
+            <p class="desafioTitulo"><br>IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência 
+                ou pode ser previamente definido no código;
+            </p>
+    
+            <h3>RESOLUÇÃO:</h3>
+    
+            <form>
+                <label class="formLabel">Digite um número inteiro e verifique se é parte da sequência Fibonacci: </label>
+                <input class="inputNumero" type="number" id="inputNumero" name="inputNumero" 
+                        title="Digite um número inteiro" pattern="\d+" required>
+                <button class="submit" id="buttonFibonacci">Verificar Número</button>
+            </form>
+    
+            <p class="desafioResposta" id="resposta2"></p>
+        </div>
+        
+        <div class="desafioDiv">
+            <h2>Desafio 03</h2>
+            <p class="desafioTitulo">3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora,
+                 faça um programa, na linguagem que desejar, que calcule e retorne:
+            </p>
+            <ul>
+                <li>O menor valor de faturamento ocorrido em um dia do mês;</li>
+                <li>O maior valor de faturamento ocorrido em um dia do mês;</li>
+                <li>Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.</li>
+            </ul>
+            <p>IMPORTANTE:</p>
+            <ul>
+                <li>Usar o json ou xml disponível como fonte dos dados do faturamento mensal;</li>
+                <li>Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no cálculo da média;</li>
+            </ul>
+    
+            <h3>RESOLUÇÃO:</h3>
+            <p class="desafioResposta" id="resposta3"></p>
+        </div>
+        
+        <div class="desafioDiv">
+            <h2>Desafio 04</h2>
+        <p class="desafioTitulo">4) Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:</p>
+        <ul>
+            <li>SP – <span class="valor" id="SP" data-valor="67836.43">R$ 67.836,43</span></li>
+            <li>RJ – <span class="valor" id="RJ" data-valor="36678.66">R$ 36.678,66</span></li>
+            <li>MG – <span class="valor" id="MG" data-valor="29229.88">R$ 29.229,88</span></li>
+            <li>ES – <span class="valor" id="ES" data-valor="27165.48">R$ 27.165,48</span></li>
+            <li>Outros – <span class="valor" id="Outros" data-valor="19849.53">R$ 19.849,53</span></li>
+        </ul>
+        <p class="desafioTitulo">Escreva um programa na linguagem que desejar onde calcule o percentual de
+             representação que cada estado teve dentro do valor total mensal da distribuidora.
+        </p>
+        <h3>RESOLUÇÃO:</h3>
+        <p class="desafioResposta" id="resposta4"></p>
+        </div>
+
+        <div class="desafioDiv">
+            <h2>Desafio 05</h2>
+            <p class="desafioTitulo">5) Escreva um programa que inverta os caracteres de um string.</p>
+            <h3>RESOLUÇÃO:</h3>
+    
+            <form>
+                <label class="formLabel">Digite uma string (texto): </label>
+                <input class="inputString" type="text" id="inputString" name="inputString" 
+                        title="Digite um texto com mais de 1 caractere" pattern=".{2,}" required>
+                <button class="submit" id="buttonReverse">Inverter String</button>
+            </form>
+    
+            <p class="desafioResposta" id="resposta5"></p>
+        </div>     
+    </main>
+
+    <footer>
+        <p>Desafio Target Sistemas - Estágio</p>
+        <p>&copy; 
+             - Amanda Cristina Schneider Migliorini
+        </p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>

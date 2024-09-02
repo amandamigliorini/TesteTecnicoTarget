@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+header, footer{
+    background-color: #ae0917;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+header{
+    font-size: 1.2rem;
+}
+
+main{
+    margin: 1rem;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.desafioDiv{
+    border: 1px solid #ae0917;
+    border-radius: .3rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px rgba(119, 3, 3, 0.3);
+}
+
+.desafioTitulo, .desafioResposta, h3, li, label, input{
+    font-size: 1.2rem;
+}
+
+.desafioResposta{
+    font-weight: 700;
+}
+
+h3{
+    padding-top: 1rem;
+}
+
+label, button, input{
+    display: block;
+    padding: .5rem;
+}
+
+button{
+    margin-top: .5rem;
+    background-color: #ae0917;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: .2rem;
+}
+
+input{
+    border-radius: .2rem;
+}
+
+input:valid{
+    border: 1px solid rgb(51, 109, 51);
+    border-right: 10px solid rgb(51, 109, 51);
+}
+
+input:invalid{
+    border: 1px solid #ae0917;
+    border-right: 10px solid #ae0917;
+}
