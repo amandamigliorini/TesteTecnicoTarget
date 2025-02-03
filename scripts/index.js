@@ -21,26 +21,25 @@ buttonFibonacci.addEventListener("click", (event) => {
 })
 
 
-function verificarFibonacci (numUsuario){
-    let numInicial = 0
-    let numFinal = 1
-    let numSeguinte = 0
+function verificarFibonacci(numUsuario) {
+    let numInicial = 0;
+    let numFinal = 1;
+    let numSeguinte = 0;
 
-    if (numUsuario == 0 || numUsuario == 1){
-       return `${numUsuario} faz parte da sequência Fibonacci`;
+    if (numUsuario == 0 || numUsuario == 1) {
+        return `${numUsuario} faz parte da sequência Fibonacci`;
     }
 
     while (numSeguinte < numUsuario) {
         numSeguinte = numInicial + numFinal;
         numInicial = numFinal;
-        numFinal = numSeguinte
+        numFinal = numSeguinte;
+    }
 
-        if(numUsuario == numSeguinte){
-            return `${numUsuario} faz parte da sequência Fibonacci`;
-        }
-        else{
-            return `${numUsuario} não faz parte da sequência Fibonacci`;
-        }
+    if (numSeguinte == numUsuario) {
+        return `${numUsuario} faz parte da sequência Fibonacci`;
+    } else {
+        return `${numUsuario} não faz parte da sequência Fibonacci`;
     }
 }
 
